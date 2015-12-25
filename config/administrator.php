@@ -77,7 +77,7 @@ return array(
 	 *
 	 * @type bool
 	 */
-	'use_dashboard' => true,
+	'use_dashboard' => false,
 
 	/**
 	 * If you want to create a dashboard view, provide the view string here.
@@ -91,7 +91,7 @@ return array(
 	 *
 	 * @type string
 	 */
-	'home_page' => '',
+	'home_page' => 'athletes',
 
 	/**
 	 * The route to which the user will be taken when they click the "back to site" button
