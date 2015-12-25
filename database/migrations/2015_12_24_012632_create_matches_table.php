@@ -17,14 +17,14 @@ class CreateMatchesTable extends Migration
             $table->integer('event_id');
             $table->integer('roster_id');
             $table->integer('athlete_id');
-            $table->integer('weight')->default(0);
-            $table->boolean('result')->default(0);
-            $table->boolean('tech')->default(0);
-            $table->boolean('pin')->default(0);
+            $table->integer('weight')->nullable();
+            $table->boolean('result')->nullable();
+            $table->boolean('tech')->nullable();
+            $table->boolean('pin')->nullable();
             $table->integer('pin_time')->nullable();
-            $table->integer('team_points')->default(0);
-            $table->integer('score_for')->default(0);
-            $table->integer('score_against')->default(0);
+            $table->integer('team_points')->nullable();
+            $table->integer('score_for')->nullable();
+            $table->integer('score_against')->nullable();
             $table->timestamps();
         });
     }
