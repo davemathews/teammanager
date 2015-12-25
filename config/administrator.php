@@ -68,7 +68,8 @@ return array(
 	 */
 	'permission'=> function()
 	{
-		return Auth::check();
+		//return Auth::check();
+		return true;
 	},
 
 	/**
@@ -77,7 +78,7 @@ return array(
 	 *
 	 * @type bool
 	 */
-	'use_dashboard' => false,
+	'use_dashboard' => true,
 
 	/**
 	 * If you want to create a dashboard view, provide the view string here.
@@ -91,7 +92,7 @@ return array(
 	 *
 	 * @type string
 	 */
-	'home_page' => 'athletes',
+	'home_page' => '',
 
 	/**
 	 * The route to which the user will be taken when they click the "back to site" button
