@@ -15,10 +15,10 @@ class CreateEventsTable extends Migration
         Schema::create('events', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('roster_id');
-            $table->date('event_date_start');
-            $table->date('event_date_end');
-            $table->string('name');
-            $table->text('description');
+            $table->date('event_date_start')->nullable();
+            $table->date('event_date_end')->nullable();
+            $table->string('name')->nullable();
+            $table->text('description')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

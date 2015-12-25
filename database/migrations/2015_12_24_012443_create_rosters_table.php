@@ -14,8 +14,8 @@ class CreateRostersTable extends Migration
     {
         Schema::create('rosters', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('year');
-            $table->string('name');
+            $table->integer('year')->default(0);
+            $table->string('name')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
