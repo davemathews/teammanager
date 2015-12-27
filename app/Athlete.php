@@ -29,13 +29,13 @@ class Athlete extends Model
     protected $fillable = [
         'first_name',
         'last_name',
+        'email',
+        'phone',
+        'city',
+        'state',
         'weight',
         'age',
         'dob',
-        'signed',
-        'signed_date',
-        'amount',
-        'high_school_graduation_year',
         'college_graduation_year',
         'roster_id'
     ];
@@ -48,6 +48,7 @@ class Athlete extends Model
     protected $rules = [
         'first_name' => 'required',
         'last_name'  => 'required',
+        'email'      => 'email',
     ];
 
     /**
@@ -60,8 +61,6 @@ class Athlete extends Model
         'roster_id'                   => 'integer',
         'weight'                      => 'integer',
         'age'                         => 'integer',
-        'signed'                      => 'integer',
-        'high_school_graduation_year' => 'integer',
         'college_graduation_year'     => 'integer',
     ];
 
@@ -70,8 +69,8 @@ class Athlete extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function roster()
+    public function rosters()
     {
-        return $this->belongsTo('App\Roster');
+        return $this->belongsToMany('App\Roster');
     }
 }

@@ -16,13 +16,13 @@ class CreateAthletesTable extends Migration
             $table->increments('id');
             $table->string('first_name');
             $table->string('last_name');
+            $table->string('email')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('city')->nullable();
+            $table->string('state')->nullable();
             $table->integer('weight')->nullable();
             $table->integer('age')->nullable();
             $table->date('dob')->nullable();
-            $table->boolean('signed')->nullable();
-            $table->date('signed_date')->nullable();
-            $table->decimal('amount', 7, 2)->nullable();
-            $table->integer('high_school_graduation_year')->nullable();
             $table->integer('college_graduation_year')->nullable();
             $table->integer('roster_id')->nullable();
             $table->timestamps();

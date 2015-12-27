@@ -58,7 +58,7 @@ class Roster extends Model
      */
     public function athletes()
     {
-        return $this->hasMany('App\Athlete');
+        return $this->belongsToMany('App\Athlete');
     }
 
     /**

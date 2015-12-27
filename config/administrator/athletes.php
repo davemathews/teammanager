@@ -32,6 +32,18 @@ return array(
         'last_name' => array(
             'title' => 'Last Name',
         ),
+        'email' => array(
+            'title' => 'Email',
+        ),
+        'phone' => array(
+            'title' => 'Phone',
+        ),
+        'city' => array(
+            'title' => 'City',
+        ),
+        'state' => array(
+            'title' => 'State',
+        ),
         'weight' => array(
             'title' => 'Weight',
         ),
@@ -40,18 +52,6 @@ return array(
         ),
         'dob' => array(
             'title' => 'DOB',
-        ),
-        'signed' => array(
-            'title' => 'Signed',
-        ),
-        'signed_date' => array(
-            'title' => 'Signed Date',
-        ),
-        'amount' => array(
-            'title' => 'Amount',
-        ),
-        'high_school_graduation_year' => array(
-            'title' => 'High School Grad',
         ),
         'college_graduation_year' => array(
             'title' => 'College Grad',
@@ -75,6 +75,22 @@ return array(
             'title' => 'Last Name',
             'type' => 'text',
         ),
+        'email' => array(
+            'title' => 'Email',
+            'type' => 'text',
+        ),
+        'phone' => array(
+            'title' => 'Phone',
+            'type' => 'text',
+        ),
+        'city' => array(
+            'title' => 'City',
+            'type' => 'text',
+        ),
+        'state' => array(
+            'title' => 'State',
+            'type' => 'text',
+        ),
         'weight' => array(
             'title' => 'Weight',
             'type' => 'number',
@@ -86,26 +102,6 @@ return array(
         'dob' => array(
             'title' => 'DOB',
             'type' => 'date',
-        ),
-        'signed' => array(
-            'title' => 'Signed',
-            'type' => 'bool',
-        ),
-        'signed_date' => array(
-            'title' => 'Signed Date',
-            'type' => 'date',
-        ),
-        'amount' => array(
-            'title' => 'Amount',
-            'type' => 'number',
-            'symbol' => '$', //optional, defaults to ''
-            'decimals' => 2, //optional, defaults to 0
-            'thousands_separator' => ',', //optional, defaults to ','
-            'decimal_separator' => '.', //optional, defaults to '.'
-        ),
-        'high_school_graduation_year' => array(
-            'title' => 'High School Grad',
-            'type' => 'number',
         ),
         'college_graduation_year' => array(
             'title' => 'College Grad',
@@ -130,6 +126,22 @@ return array(
             'title' => 'Last Name',
             'type' => 'text',
         ),
+        'email' => array(
+            'title' => 'Email',
+            'type' => 'text',
+        ),
+        'phone' => array(
+            'title' => 'Phone',
+            'type' => 'text',
+        ),
+        'city' => array(
+            'title' => 'City',
+            'type' => 'text',
+        ),
+        'state' => array(
+            'title' => 'State',
+            'type' => 'text',
+        ),
         'weight' => array(
             'title' => 'Weight',
             'type' => 'number',
@@ -141,26 +153,6 @@ return array(
         'dob' => array(
             'title' => 'DOB',
             'type' => 'date',
-        ),
-        'signed' => array(
-            'title' => 'Signed',
-            'type' => 'bool',
-        ),
-        'signed_date' => array(
-            'title' => 'Signed Date',
-            'type' => 'date',
-        ),
-        'amount' => array(
-            'title' => 'Amount',
-            'type' => 'number',
-            'symbol' => '$', //optional, defaults to ''
-            'decimals' => 2, //optional, defaults to 0
-            'thousands_separator' => ',', //optional, defaults to ','
-            'decimal_separator' => '.', //optional, defaults to '.'
-        ),
-        'high_school_graduation_year' => array(
-            'title' => 'High School Grad',
-            'type' => 'number',
         ),
         'college_graduation_year' => array(
             'title' => 'College Grad',
