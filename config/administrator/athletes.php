@@ -56,9 +56,9 @@ return array(
         'college_graduation_year' => array(
             'title' => 'College Grad',
         ),
-        'roster' => array(
+        'rosters' => array(
             'title' => 'Roster',
-            'relationship' => 'roster',
+            'relationship' => 'rosters',
             'select' => "(:table).name",
         ),
     ),
@@ -107,7 +107,7 @@ return array(
             'title' => 'College Grad',
             'type' => 'number',
         ),
-        'roster' => array(
+        'rosters' => array(
             'title' => 'Roster',
             'type' => 'relationship',
             'name_field' => 'name',
@@ -158,7 +158,7 @@ return array(
             'title' => 'College Grad',
             'type' => 'number',
         ),
-        'roster' => array(
+        'rosters' => array(
             'title' => 'Roster',
             'type' => 'relationship',
             'name_field' => 'name',
