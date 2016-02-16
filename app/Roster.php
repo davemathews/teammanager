@@ -80,4 +80,14 @@ class Roster extends Model
     {
         return $this->hasMany('App\Match');
     }
+
+    /**
+     * Defines relationship between Rosters and Recruits
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function recruits()
+    {
+        return $this->hasMany('App\Recruit');
+    }
 }
