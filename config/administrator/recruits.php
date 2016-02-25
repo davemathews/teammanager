@@ -92,9 +92,9 @@ return array(
         'school_declined_for' => array(
             'title' => 'School Declined For',
         ),
-        'rosters' => array(
+        'roster' => array(
             'title' => 'Roster',
-            'relationship' => 'rosters',
+            'relationship' => 'roster',
             'select' => "(:table).name",
         ),
     ),
@@ -191,7 +191,7 @@ return array(
             'title' => 'School Declined For',
             'type' => 'text',
         ),
-        'rosters' => array(
+        'roster' => array(
             'title' => 'Roster',
             'type' => 'relationship',
             'name_field' => 'name',
@@ -290,7 +290,7 @@ return array(
             'title' => 'School Declined For',
             'type' => 'text',
         ),
-        'rosters' => array(
+        'roster' => array(
             'title' => 'Roster',
             'type' => 'relationship',
             'name_field' => 'name',

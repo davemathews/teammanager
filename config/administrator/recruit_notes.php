@@ -28,7 +28,7 @@ return array(
     'columns' => array(
         'recruit' => array(
             'title' => 'Recruit',
-            'relationship' => 'recruits',
+            'relationship' => 'recruit',
             'select' => "Concact((:table).first_name, ' ', (:table).last_name)",
         ),
         'contact_date' => array(
