@@ -29,7 +29,7 @@ return array(
         'recruit' => array(
             'title' => 'Recruit',
             'relationship' => 'recruit',
-            'select' => "Concact((:table).first_name, ' ', (:table).last_name)",
+            'select' => "Concat((:table).first_name, ' ', (:table).last_name)",
         ),
         'contact_date' => array(
             'title' => 'Contact Date',
