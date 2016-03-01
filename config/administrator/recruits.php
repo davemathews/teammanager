@@ -68,14 +68,14 @@ return array(
         'sat' => array(
             'title' => 'SAT',
         ),
-        'reading_taken' => array(
+        'reading_taken_bool' => array(
             'title' => 'Reading Taken',
             'select' => "IF((:table).reading_taken, 'yes', 'no')",
         ),
         'intended_major' => array(
             'title' => 'Intended Major',
         ),
-        'signed' => array(
+        'signed_bool' => array(
             'title' => 'Signed',
             'select' => "IF((:table).signed, 'yes', 'no')",
         ),
@@ -85,7 +85,7 @@ return array(
         'offer' => array(
             'title' => 'Offer',
         ),
-        'declined' => array(
+        'declined_bool' => array(
             'title' => 'Declined',
             'select' => "IF((:table).declined, 'yes', 'no')",
         ),
