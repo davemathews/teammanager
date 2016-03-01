@@ -5,7 +5,9 @@ $searchResults = Vimeo::request('/me/videos', array('page' => 1, 'per_page' => 1
 //print_r($searchResults);
 ?>
 @foreach($searchResults['body']['data'] as $videoData)
+    <div style="display:inline-block;"></div>
     <h2>{{ $videoData['name'] }}</h2>
         <iframe src="https://player.vimeo.com/{{ preg_replace("/videos/","video",$videoData['uri']) }}?badge=0&autopause=0&player_id=0" width="512" height="288" frameborder="0" title="{{ $videoData['name'] }}" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
 @endforeach
 </div>
