@@ -5,5 +5,5 @@ $searchResults = Vimeo::request('/me/videos', array('page' => 1, 'per_page' => 1
 ?>
 @foreach($searchResults['body']['data'] as $videoData)
     <h2>{{ $videoData['name'] }}</h2>
-    {{ $videoData['embed']['html'] }}
+    {!! $videoData['embed']['html'] !!}
 @endforeach
