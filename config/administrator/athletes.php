@@ -59,7 +59,7 @@ return array(
         'rosters' => array(
             'title' => 'Roster',
             'relationship' => 'rosters',
-            'select' => "(:table).name",
+            'select' => "GROUP_CONCAT((:table).year)",
         ),
     ),
 
@@ -106,11 +106,12 @@ return array(
         'college_graduation_year' => array(
             'title' => 'College Grad',
             'type' => 'number',
+            'thousands_separator' => '',
         ),
         'rosters' => array(
             'title' => 'Roster',
             'type' => 'relationship',
-            'name_field' => 'name',
+            'name_field' => 'year',
         ),
     ),
 
@@ -157,11 +158,12 @@ return array(
         'college_graduation_year' => array(
             'title' => 'College Grad',
             'type' => 'number',
+            'thousands_separator' => '',
         ),
         'rosters' => array(
             'title' => 'Roster',
             'type' => 'relationship',
-            'name_field' => 'name',
+            'name_field' => 'year',
         ),
     ),
 );

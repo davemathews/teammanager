@@ -70,12 +70,14 @@ return array(
         ),
         'reading_taken' => array(
             'title' => 'Reading Taken',
+            'select' => "IF((:table).reading_taken, 'yes', 'no')",
         ),
         'intended_major' => array(
             'title' => 'Intended Major',
         ),
         'signed' => array(
             'title' => 'Signed',
+            'select' => "IF((:table).signed, 'yes', 'no')",
         ),
         'signed_date' => array(
             'title' => 'Signed Date',
@@ -85,6 +87,7 @@ return array(
         ),
         'declined' => array(
             'title' => 'Declined',
+            'select' => "IF((:table).declined, 'yes', 'no')",
         ),
         'declined_date' => array(
             'title' => 'Declined Date',
@@ -95,7 +98,7 @@ return array(
         'roster' => array(
             'title' => 'Roster',
             'relationship' => 'roster',
-            'select' => "(:table).name",
+            'select' => "(:table).year",
         ),
     ),
 
@@ -146,10 +149,13 @@ return array(
         'high_school_graduation_year' => array(
             'title' => 'High School Grad',
             'type' => 'number',
+            'thousands_separator' => '',
         ),
         'gpa' => array(
             'title' => 'GPA',
             'type' => 'number',
+            'decimals' => 2,
+            'thousands_separator' => '',
         ),
         'act' => array(
             'title' => 'ACT',
@@ -194,7 +200,7 @@ return array(
         'roster' => array(
             'title' => 'Roster',
             'type' => 'relationship',
-            'name_field' => 'name',
+            'name_field' => 'year',
         ),
     ),
 
@@ -245,10 +251,13 @@ return array(
         'high_school_graduation_year' => array(
             'title' => 'High School Grad',
             'type' => 'number',
+            'thousands_separator' => '',
         ),
         'gpa' => array(
             'title' => 'GPA',
             'type' => 'number',
+            'decimals' => 2,
+            'thousands_separator' => '',
         ),
         'act' => array(
             'title' => 'ACT',
@@ -293,7 +302,7 @@ return array(
         'roster' => array(
             'title' => 'Roster',
             'type' => 'relationship',
-            'name_field' => 'name',
+            'name_field' => 'year',
         ),
     ),
 );

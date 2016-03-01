@@ -29,7 +29,7 @@ return array(
         'roster' => array(
             'title' => 'Roster',
             'relationship' => 'roster',
-            'select' => "(:table).name",
+            'select' => "(:table).year",
         ),
         'athlete' => array(
             'title' => 'Athlete',
@@ -48,7 +48,7 @@ return array(
         'roster' => array(
             'title' => 'Roster',
             'type' => 'relationship',
-            'name_field' => 'name',
+            'name_field' => 'year',
         ),
         'athlete' => array(
             'title' => 'Athlete',
@@ -72,7 +72,7 @@ return array(
         'roster' => array(
             'title' => 'Roster',
             'type' => 'relationship',
-            'name_field' => 'name',
+            'name_field' => 'year',
         ),
         'athlete' => array(
             'title' => 'Athlete',
