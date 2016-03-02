@@ -9,7 +9,7 @@
 //print_r($searchResults);
 ?>
     <div style="display:block;">
-    <a class="nav" href="@if($searchResults['body']['paging']['previous']) {{ "?page=".($searchResults['body']['page'] - 1) }} @endif"><-Prev</a> <a class="nav" href="@if($searchResults['body']['paging']['next']) {{ "?page=".($searchResults['body']['page'] + 1) }} @endif">Next-></a>
+    <a class="nav" href="@if($searchResults['body']['paging']['previous']) {{ "?page=".($searchResults['body']['page'] - 1) }} @endif">Previous</a> <a class="nav" href="@if($searchResults['body']['paging']['next']) {{ "?page=".($searchResults['body']['page'] + 1) }} @endif">Next</a>
     </div>
 @foreach($searchResults['body']['data'] as $videoData)
     <div style="display:inline-block;">
@@ -19,10 +19,10 @@
 </div>
 <style>
     .nav {
-        display: block;
+        display: inline-block;
         width: 5em;
         color: #FFF;
-        background-color: #036;
+        background-color: #44484b;
         padding: .2em 0;
         text-align: center;
         text-decoration: none;
