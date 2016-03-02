@@ -9,7 +9,7 @@
 //print_r($searchResults);
 ?>
     <div style="display:block;">
-    <a href="@if($searchResults['body']['paging']['previous']) {{ "?page=".($searchResults['body']['page'] - 1) }} @endif"><-Prev</a> <a href="@if($searchResults['body']['paging']['next']) {{ "?page=".($searchResults['body']['page'] + 1) }} @endif">Next-></a>
+    <a class="previous" href="@if($searchResults['body']['paging']['previous']) {{ "?page=".($searchResults['body']['page'] - 1) }} @endif"><-Prev</a> <a class="next" href="@if($searchResults['body']['paging']['next']) {{ "?page=".($searchResults['body']['page'] + 1) }} @endif">Next-></a>
     </div>
 @foreach($searchResults['body']['data'] as $videoData)
     <div style="display:inline-block;">
