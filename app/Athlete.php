@@ -78,6 +78,16 @@ class Athlete extends Model
         return implode(", ", $allRosters);
     }
 
+    public function setAgeAttribute($value) {
+        if(empty($value)) {
+            return;
+        }
+        $date = new DateTime($value);
+        $now = new DateTime();
+        $interval = $now->diff($date);
+        return $interval->y;
+    }
+
     /**
      * Defines relationship between Athletes and Rosters
      *
