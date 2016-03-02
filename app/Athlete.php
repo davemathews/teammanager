@@ -64,6 +64,20 @@ class Athlete extends Model
         'college_graduation_year'     => 'integer',
     ];
 
+    protected $appends = ['all_rosters'];
+
+    public function getAllRostersAttribute() {
+        if (! is_object($this->rosters)) {
+            return '';
+        }
+        $allRosters = [];
+        $rosters = $this->rosters->toArray();
+        foreach ($rosters as $roster) {
+            $allRosters[] = $roster['year'];
+        }
+        return implode(", ", $allRosters);
+    }
+
     /**
      * Defines relationship between Athletes and Rosters
      *

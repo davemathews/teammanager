@@ -56,10 +56,8 @@ return array(
         'college_graduation_year' => array(
             'title' => 'College Grad',
         ),
-        'rosters' => array(
+        'all_rosters' => array(
             'title' => 'Roster',
-            'relationship' => 'rosters',
-            'select' => "GROUP_CONCAT((:table).year)",
         ),
     ),
 
