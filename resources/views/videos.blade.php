@@ -8,7 +8,7 @@
     $searchResults = Vimeo::request('/me/videos', array('page' => $page, 'per_page' => 12));
 //print_r($searchResults);
 ?>
-    <div style="display:block; align:center;">
+    <div style="display:block; width:100%; align:center;">
     <a class="nav" href="@if($searchResults['body']['paging']['previous']) {{ "?page=".($searchResults['body']['page'] - 1) }} @endif">Previous</a> <a class="nav" href="@if($searchResults['body']['paging']['next']) {{ "?page=".($searchResults['body']['page'] + 1) }} @endif">Next</a>
     </div>
 @foreach($searchResults['body']['data'] as $videoData)
@@ -23,10 +23,9 @@
         width: 5em;
         color: #FFF;
         background-color: #44484b;
-        padding: .2em 0;
+        padding: 5px;
         text-align: center;
         text-decoration: none;
-        padding: 15px;
+        margin: 5px;
     }
-
 </style>
