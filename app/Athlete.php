@@ -82,11 +82,12 @@ class Athlete extends Model
     public function setAgeAttribute($value) {
         if(empty($this->attributes['dob'])) {
             $this->attributes['age'] = '';
+        } else {
+            $date = new DateTime($this->attributes['dob'] . " 00:00:00");
+            $now = new DateTime();
+            $interval = $now->diff($date);
+            $this->attributes['age'] = $interval->y;
         }
-        $date = new DateTime($this->attributes['dob']." 00:00:00");
-        $now = new DateTime();
-        $interval = $now->diff($date);
-        $this->attributes['age'] =  $interval->y;
     }
 
     /**
