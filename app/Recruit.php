@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use DateTime;
 
 /**
  * Class Recruit
@@ -80,6 +81,16 @@ class Recruit extends Model
         'offer'                       => 'integer',
         'declined'                    => 'integer',
     ];
+
+    public function setAgeAttribute($value) {
+        if(empty($this->attributes['dob'])) {
+            $this->attributes['age'] = '';
+        }
+        $date = new DateTime($this->attributes['dob']." 00:00:00");
+        $now = new DateTime();
+        $interval = $now->diff($date);
+        $this->attributes['age'] =  $interval->y;
+    }
 
     /**
      * Defines relationship between Recruits and RecruitNotes
