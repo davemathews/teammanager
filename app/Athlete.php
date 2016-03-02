@@ -80,10 +80,10 @@ class Athlete extends Model
     }
 
     public function setAgeAttribute($value) {
-        if(empty($value)) {
+        if(empty($this->dob)) {
             return;
         }
-        $date = new DateTime($value);
+        $date = new DateTime($this->dob);
         $now = new DateTime();
         $interval = $now->diff($date);
         return $interval->y;
