@@ -2,7 +2,7 @@
 <?php
 //Show first page of results, Set the number of items to show on each page to 50, Sort by relevance, Show results in descending order, and Filter only Creative Commons License videos
     $page = 1;
-    if($_GET['page']){
+    if(isset($_GET['page'])){
         $page = $_GET['page'];
     }
     $searchResults = Vimeo::request('/me/videos', array('page' => $page, 'per_page' => 12));
