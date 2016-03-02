@@ -83,7 +83,7 @@ class Athlete extends Model
         if(empty($this->dob)) {
             return;
         }
-        $date = new DateTime($this->dob);
+        $date = new DateTime($this->dob." 00:00:00");
         $now = new DateTime();
         $interval = $now->diff($date);
         return $interval->y;
