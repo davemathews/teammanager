@@ -19,7 +19,6 @@ class CreateVideoLogsTable extends Migration
             $table->integer('weight')->nullable();
             $table->date('match_date')->nullable();
             $table->text('notes')->nullable();
-            $table->integer('weight')->nullable();
             $table->integer('shots_attempted')->nullable();
             $table->integer('shots_scored')->nullable();
             $table->integer('shots_against')->nullable();
