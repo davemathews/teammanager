@@ -65,7 +65,7 @@ return array(
 	 * 		'Analytics' => array('E-Commerce' => 'page.ecommerce.analytics'),
 	 *	)
 	 */
-	'menu' => array('Team Info' => ['athletes', 'rosters', 'athlete_roster'], 'Team Stats' => ['events', 'matches'], 'Recruiting' => ['recruits', 'recruit_notes'], 'Videos' => 'page.videos', 'Stats' => ['shots', 'ties']),
+	'menu' => array('Team Info' => ['athletes', 'rosters', 'athlete_roster'], 'Team Stats' => ['events', 'matches'], 'Recruiting' => ['recruits', 'recruit_notes'], 'Videos' => [ 'video_logs', 'Watch' => 'page.videos'], 'Stats' => ['shots', 'ties']),
 
 	/**
 	 * The permission option is the highest-level authentication check that lets you define a closure that should return true if the current user
