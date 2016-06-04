@@ -10,7 +10,7 @@ return array(
 
     'single' => 'Ties',
 
-    'model' => 'App\Ties',
+    'model' => 'App\Tie',
 
     /**
      * The sort options for a model
