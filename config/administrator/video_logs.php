@@ -153,10 +153,10 @@ return array(
             'title' => 'Scored Last 30',
         ),
         'scored_on_first_30' => array(
-            'title' => 'Scored In First 30',
+            'title' => 'Scored On In First 30',
         ),
         'scored_on_last_30' => array(
-            'title' => 'Scored In Last 30',
+            'title' => 'Scored On In Last 30',
         ),
     ),
 
@@ -221,11 +221,11 @@ return array(
             'type' => 'bool',
         ),
         'scored_on_first_30' => array(
-            'title' => 'Scored In First 30',
+            'title' => 'Scored On In First 30',
             'type' => 'bool',
         ),
         'scored_on_last_30' => array(
-            'title' => 'Scored In Last 30',
+            'title' => 'Scored On In Last 30',
             'type' => 'bool',
         ),
     ),
@@ -399,11 +399,11 @@ return array(
             'type' => 'bool',
         ),
         'scored_on_first_30' => array(
-            'title' => 'Scored In First 30',
+            'title' => 'Scored On In First 30',
             'type' => 'bool',
         ),
         'scored_on_last_30' => array(
-            'title' => 'Scored In Last 30',
+            'title' => 'Scored On In Last 30',
             'type' => 'bool',
         ),
     ),
