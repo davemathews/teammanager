@@ -53,7 +53,6 @@ class CreateVideoLogsTable extends Migration
             $table->integer('decision_against')->nullable();
             $table->integer('shot_clock_for')->nullable();
             $table->integer('shot_clock_against')->nullable();
-            $table->integer('shot_clock_against')->nullable();
             $table->integer('first_to_score')->nullable();
             $table->integer('scored_first_30')->nullable();
             $table->integer('scored_last_30')->nullable();
