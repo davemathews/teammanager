@@ -108,9 +108,15 @@ $count = \App\VideoLog::all()->count();
         border-collapse: collapse;
     }
     th {
+        background-color: #4CAF50;
+        color: white;
+    }
+    th {
         height: 50px;
     }
     th, td {
         border: 1px solid #ddd;
+        padding: 15px;
+        text-align: left;
     }
 </style>
