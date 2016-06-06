@@ -17,8 +17,8 @@ $stats = \App\VideoLog::select(DB::raw('wrestler, sum(shots_attempted) AS shots_
             <td>{{ $stat->reattacks_against }}</td>
             <td>{{ $stat->counter_scores_for }}</td>
             <td>{{ $stat->counter_scores_against }}</td>
-            <td>{{ $stat->4pt_attacks_for }}</td>
-            <td>{{ $stat->4pt_attacks_against }}</td>
+            <td>{{ $stat->attribute['4pt_attacks_for'] }}</td>
+            <td>{{ $stat->attribute['4pt_attacks_against'] }}</td>
             <td>{{ $stat->front_head_attempted }}</td>
             <td>{{ $stat->front_head_scored }}</td>
             <td>{{ round(($stat->front_head_scored / $stat->front_head_attempted) * 100, 2) }}</td>
