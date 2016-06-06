@@ -6,7 +6,7 @@ $stats = \App\VideoLog::select(DB::raw('wrestler, sum(shots_attempted) AS shots_
     <table>
     @foreach($stats as $stat)
         <tr>
-            <td>{{ $stats->wrestler }}</td>
+            <td>{{ $stat->wrestler }}</td>
         </tr>
     @endforeach
     </table>
