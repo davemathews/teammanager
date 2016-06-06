@@ -4,6 +4,52 @@ $stats = \App\VideoLog::select(DB::raw('wrestler, sum(shots_attempted) AS shots_
 //dd($stats);
 ?>
     <table>
+        <tr>
+            <th>Wrestler</th>
+            <th>Shots Attempted</th>
+            <th>Shots Scored</th>
+            <th>Shots Percentage</th>
+            <th>Shots Against</th>
+            <th>Shots Scored Against</th>
+            <th>Shots Against Percentage</th>
+            <th>ReAttacks For</th>
+            <th>ReAttacks Against</th>
+            <th>Counter Scores For</th>
+            <th>Counter Scores Against</th>
+            <th>4pt Attacks For</th>
+            <th>4pt Attacks Against</th>
+            <th>Front Head Attempted</th>
+            <th>Front Head Scored</th>
+            <th>Front Head Percentage</th>
+            <th>Front Head Against</th>
+            <th>Front Head Scored Against</th>
+            <th>Front Head Against Percentage</th>
+            <th>Attack Outs For</th>
+            <th>Attack Outs Against</th>
+            <th>Takedown To Turns For</th>
+            <th>Takedown To Turns Against</th>
+            <th>Guts For</th>
+            <th>Guts Against</th>
+            <th>Laces For</th>
+            <th>Laces Against</th>
+            <th>High Guts For</th>
+            <th>High Guts Against</th>
+            <th>Other Turns For</th>
+            <th>Other Turns Against</th>
+            <th>Pins For</th>
+            <th>Pins Against</th>
+            <th>Tech For</th>
+            <th>Tech Against</th>
+            <th>Decision For</th>
+            <th>Decision Against</th>
+            <th>Shot Clock For</th>
+            <th>Shot Clock Against</th>
+            <th>First To Score</th>
+            <th>Scored First 30</th>
+            <th>Scored Last 30</th>
+            <th>Scored On In First 30</th>
+            <th>Scored On In Last 30</th>
+        </tr>
     @foreach($stats as $stat)
         <tr>
             <td>{{ $stat->wrestler }}</td>
