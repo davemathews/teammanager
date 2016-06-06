@@ -9,10 +9,10 @@ $stats = \App\VideoLog::select(DB::raw('wrestler, sum(shots_attempted) AS shots_
             <td>{{ $stat->wrestler }}</td>
             <td>{{ $stat->shots_attempted }}</td>
             <td>{{ $stat->shots_scored }}</td>
-            <td>{{ round(($stat->shots_attempted / $stat->shots_scored) * 100, 2) }}</td>
+            <td>{{ round(($stat->shots_scored / $stat->shots_attempted) * 100, 2) }}</td>
             <td>{{ $stat->shots_against }}</td>
             <td>{{ $stat->shots_scored_against }}</td>
-            <td>{{ round(($stat->shots_against / $stat->shots_scored_against) * 100, 2) }}</td>
+            <td>{{ round(($stat->shots_scored_against / $stat->shots_against) * 100, 2) }}</td>
         </tr>
     @endforeach
     </table>
