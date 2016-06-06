@@ -7,6 +7,12 @@ $stats = \App\VideoLog::select(DB::raw('wrestler, sum(shots_attempted) AS shots_
     @foreach($stats as $stat)
         <tr>
             <td>{{ $stat->wrestler }}</td>
+            <td>{{ $stat->shots_attempted }}</td>
+            <td>{{ $stat->shots_scored }}</td>
+            <td>{{ ($stat->shots_attempted / $stat->shots_scored) * 100 }}</td>
+            <td>{{ $stat->shots_against }}</td>
+            <td>{{ $stat->shots_scored_against }}</td>
+            <td>{{ ($stat->shots_against / $stat->shots_scored_against) * 100 }}</td>
         </tr>
     @endforeach
     </table>
