@@ -188,6 +188,7 @@ return array(
         'declined' => array(
             'title' => 'Declined',
             'type' => 'bool',
+            'value' => false,
         ),
         'declined_date' => array(
             'title' => 'Declined Date',
